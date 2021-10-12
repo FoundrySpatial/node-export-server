@@ -1,4 +1,4 @@
-# Highcharts Node.js Export Server
+# Fork of Highcharts Node.js Export Server hosted on Azure
 
 Convert Highcharts.JS charts to static image files.
 
@@ -159,7 +159,7 @@ depending on your setup, it may be possible to set the env variable in your `pac
 }
 ```
 
-*Library fetches* 
+*Library fetches*
 
 When fetching the built Highcharts library, the default behaviour is to
 fetch them from `code.highcharts.com`.

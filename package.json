@@ -11,7 +11,6 @@
   },
   "scripts": {
     "preinstall": "export ACCEPT_HIGHCHARTS_LICENSE=1 && node ./pre.build.js",
-    "postinstall": "highcharts-export-server --enableServer 1",
     "install": "export ACCEPT_HIGHCHARTS_LICENSE=1 && node ./build.js",
     "start": "highcharts-export-server --enableServer 1"
   },

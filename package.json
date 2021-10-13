@@ -10,9 +10,9 @@
     "highcharts-export-server": "./bin/cli.js"
   },
   "scripts": {
-    "preinstall": "node ./pre.build.js",
-    "postinstall": "node ./post.build.js",
-    "install": "node ./build.js",
+    "preinstall": "export ACCEPT_HIGHCHARTS_LICENSE=1 && node ./pre.build.js",
+    "postinstall": "highcharts-export-server --enableServer 1",
+    "install": "export ACCEPT_HIGHCHARTS_LICENSE=1 && node ./build.js",
     "start": "highcharts-export-server --enableServer 1"
   },
   "main": "lib/index.js",
@@ -28,7 +28,8 @@
     "phantomjs-prebuilt": "2.1.14",
     "prompt": "*",
     "request": "*",
-    "uuid": "3.0.1"
+    "uuid": "3.0.1",
+    "highcharts": "8.2.2"
   },
   "engines": {
     "node": ">=6.4.0"

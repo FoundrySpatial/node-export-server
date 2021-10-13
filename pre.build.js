@@ -2,10 +2,10 @@
 const pkg = require(__dirname + '/package.json');
 const fs = require('fs');
 
-const version = process.env.HIGHCHARTS_VERSION;
+const version = '8.2.2';
 const useNPM = process.env.HIGHCHARTS_USE_NPM || (process.env.HIGHCHARTS_CDN === 'npm');
 
-if (useNPM) {
+if (true) {
 
   pkg.dependencies.highcharts = version || '*';
 

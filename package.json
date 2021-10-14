@@ -12,7 +12,7 @@
   "scripts": {
     "preinstall": "export ACCEPT_HIGHCHARTS_LICENSE=1 && node ./pre.build.js",
     "install": "export ACCEPT_HIGHCHARTS_LICENSE=1 && node ./build.js",
-    "start": "highcharts-export-server --enableServer 1 --port 8080"
+    "start": "./bin/cli.js --enableServer 1 --port 8080"
   },
   "main": "lib/index.js",
   "license": "MIT",

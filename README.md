@@ -16,6 +16,20 @@ Disabled options can be enabled by adding the `--allowCodeExecution` flag when
 starting the server/CLI. Using this flag is not recommended, and should not be
 done unless the server is sandboxed and not reachable on the public internet, or if only using the CLI in a controlled manner (e.g. it's not possible for a user to change the configuration sent to it through a different system).
 
+# Docker
+
+There is a docker file in the current repo, build an image using the following command:
+
+```bash
+docker build . -t <some-meaningful-name>
+```
+
+Then run a container of the image with the following:
+
+```bash
+docker run -p 8080:8080 -d <some-meaningful-name>
+```
+
 ## What & Why
 
 This is a node.js application/service that converts [Highcharts.JS](http://highcharts.com) charts to static image files.

@@ -27,7 +27,7 @@ docker build . -t <some-meaningful-name>
 Then run a container of the image with the following:
 
 ```bash
-docker run -p 8080:8080 -d <some-meaningful-name>
+docker run -p 80:80 -d <some-meaningful-name>
 ```
 
 ## What & Why
